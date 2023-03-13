@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
+
+root {
+  --background: #2146C7;
+  --amarelo: #FCE22A;
+  --text-color: #FFFFFF;
+  --border-color: #FFFFFF;
+  --link-color: #FCE22A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2146C7;
+  font-family: 'Fredoka One', cursive;
+}
+
+.title {
+  font-family: 'Rampart One', cursive;
+  color: #FCE22A;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2em;
+  color: #FFFFFF;
+  font-family: 'Fredoka One', cursive;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.menu__link {
+  font-size: 24px;
+  color: #F9F54B;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.25em;
+}
+
+.main {
+}
+
+.main__text {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin: 1rem 3rem;
+}
+
+.main__image {
+  width: 100%;
+}
+
+.last-game {
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 1rem 3rem;
+  border-top: 3px solid #FFFFFF;
+}
+
+.last-game__info__link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #F9F54B;
+}
+
+.title__more-games {
+  margin: 1rem 3rem;
+  color: #FFFFFF;
+  border-top: 3px solid #FFFFFF;
+}
+
+.more-games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 3rem;
+}
+
+.game-card {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.footer {
+  font-family: 'Fredoka One', cursive;
+  color: #F9F54B;
+  text-align: center;
+  border-top: 3px solid #FFFFFF;
+}
