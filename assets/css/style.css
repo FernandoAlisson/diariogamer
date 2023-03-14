@@ -86,8 +86,9 @@ body {
 }
 
 .game-card {
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .footer {
