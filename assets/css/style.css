@@ -24,9 +24,9 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0 2em;
-  color: #FFFFFF;
   font-family: 'Fredoka One', cursive;
+  background-color: #FFFFFF;
+  padding: 0 2em;
 }
 
 .menu {
@@ -39,12 +39,11 @@ body {
 .menu__link {
   font-size: 24px;
   color: #F9F54B;
+  background-color: #2146C7;
+  border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.25em;
-}
-
-.main {
+  padding: 5px 15px;
 }
 
 .main__text {
@@ -80,6 +79,7 @@ body {
 
 .more-games {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 3rem;
@@ -95,4 +95,10 @@ body {
   color: #F9F54B;
   text-align: center;
   border-top: 3px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 2em;
+}
+
+.footer h2 {
+  margin: 0;
 }
