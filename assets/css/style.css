@@ -39,7 +39,7 @@ body {
 
 .menu__link {
   font-size: 24px;
-  color: var(--link-color);
+  color: #FFFFFF;
   background-color: #2146C7;
   border-radius: 10px;
   text-decoration: none;
@@ -74,6 +74,7 @@ body {
 
 .title__more-games {
   margin: 1rem 3rem;
+  padding: 10px 0;
   color: #FFFFFF;
   border-top: 3px solid #FFFFFF;
 }
@@ -82,14 +83,41 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1rem 3rem;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .game-card {
+  width: 300px;
+  height: 460px;
   border: 2px solid #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+.game-card__img {
+  height: 352px;
+}
+
+.game-card__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  color: #FFFFFF;
+}
+
+.game-card__link {
+  display: block;
+  text-align: center;
+  background-color: white;
+  padding: 16px;
+  text-decoration: none;
+  color: #000;
 }
 
 .footer {
@@ -109,12 +137,14 @@ body {
   .menu {
     display: none;
   }
-}
 
-@media screen and (max-width: 425px) {
   .last-game {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 425px) {
+  
 }
 
 @media screen and (max-width: 320px) {
