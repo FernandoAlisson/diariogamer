@@ -2,10 +2,11 @@
 
 root {
   --background: #2146C7;
+  --title-color: #000;
   --amarelo: #FCE22A;
   --text-color: #FFFFFF;
   --border-color: #FFFFFF;
-  --link-color: #FCE22A;
+  --link-color: #FFFFFF;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
 .title {
   font-family: 'Rampart One', cursive;
-  color: #FCE22A;
+  color: var(--title-color);
 }
 
 .header {
@@ -38,7 +39,7 @@ body {
 
 .menu__link {
   font-size: 24px;
-  color: #F9F54B;
+  color: var(--link-color);
   background-color: #2146C7;
   border-radius: 10px;
   text-decoration: none;
@@ -93,7 +94,7 @@ body {
 
 .footer {
   font-family: 'Fredoka One', cursive;
-  color: #F9F54B;
+  color: #000000;
   text-align: center;
   border-top: 3px solid #FFFFFF;
   background-color: #FFFFFF;
@@ -102,4 +103,20 @@ body {
 
 .footer h2 {
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .last-game {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
 }
