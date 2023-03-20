@@ -54,6 +54,12 @@ body {
   transition: 0.3s;
 }
 
+#btn-mobile {
+  display: none;
+}
+
+/* Conte*/
+
 .main__text {
   color: #FFFFFF;
   font-size: 1.5rem;
