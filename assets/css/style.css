@@ -99,7 +99,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 20px;
+  margin: 1rem 3rem;
 }
 
 .game-card {
@@ -141,7 +141,6 @@ body {
   font-family: 'Fredoka One', cursive;
   color: #000000;
   text-align: center;
-  border-top: 3px solid #FFFFFF;
   background-color: #FFFFFF;
   padding: 2em;
 }
