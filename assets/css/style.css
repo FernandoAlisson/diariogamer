@@ -60,6 +60,11 @@ body {
   display: none;
 }
 
+.subtitle {
+  margin: 1rem 3rem;
+  padding: 10px 0;
+  color: #FFFFFF;
+}
 /* Conteudo principal*/
 
 .main__text {
@@ -88,9 +93,6 @@ body {
 }
 
 .title__more-games {
-  margin: 1rem 3rem;
-  padding: 10px 0;
-  color: #FFFFFF;
   border-top: 3px solid #FFFFFF;
 }
 
@@ -227,10 +229,6 @@ body {
   }
 }
 
-@media screen and (max-width: 425px) {
-  
-}
+/* Games */
 
-@media screen and (max-width: 320px) {
-
-}
+/* Sobre */
