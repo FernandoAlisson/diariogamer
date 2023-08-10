@@ -239,7 +239,7 @@ body {
   border: 1px solid;
   border-radius: 15px;
   gap: 0.5em;
-  width: 348px;
+  width: 285px;
   padding: 2px;
   background-color: #FFFFFF;
 }
@@ -249,7 +249,7 @@ body {
   border: none;
   background-color: transparent;
   padding: 8px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .barra-busca__btn-busca {
