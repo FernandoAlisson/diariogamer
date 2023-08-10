@@ -230,5 +230,34 @@ body {
 }
 
 /* Games */
+.barra-busca {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F4F4F;
+  border: 1px solid;
+  border-radius: 15px;
+  gap: 1em;
+  width: 350px;
+  padding: 2px;
+  background-color: #FFFFFF;
+}
+
+.barra-busca__txt-busca {
+  border-radius: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.barra-busca__btn-busca {
+  border-radius: 10px;
+  height: 2rem;
+  background-color: #2146C7;
+  color: #FFFFFF;
+  font-weight: 600;
+}
 
 /* Sobre */
