@@ -11,7 +11,7 @@
 
 <body>
   <header class="header">
-    <h1 class="title">Diário Gamer</h1>
+    <h1 class="title"><a href="index.html">Diário Gamer</a></h1>
     <nav id="nav">
       <button id="btn-mobile">
         <span id="hamburguer"></span>
@@ -25,8 +25,10 @@
   </header>
 
   <div class="barra-busca">
-    <input class="barra-busca__txt-busca" type="text" placeholder="Digite o nome do game">
-    <button id="btn-busca" class="barra-busca__btn-busca">Buscar</button>
+    <input class="barra-busca__txt-busca" name="busca" id="txt-busca" type="text" placeholder="Digite o nome do game">
+    <!-- 
+      <button id="btn-busca" class="barra-busca__btn-busca">Buscar</button> 
+    -->
   </div>
   
 
@@ -74,6 +76,7 @@
     <h2>Desenvolvido por Fernando Alisson</h2>
   </footer>
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/menuHamburguer.js"></script>
+  <script src="./assets/js/busca.js"></script>
 </body>
 </html>
