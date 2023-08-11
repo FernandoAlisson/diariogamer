@@ -75,6 +75,10 @@ body {
 }
 /* Conteudo principal*/
 
+.main {
+  min-height: 70vh;
+}
+
 .main__text {
   color: #FFFFFF;
   font-size: 18px;
