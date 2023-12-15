@@ -1,32 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
 
-root {
-  --background: #2146C7;
-  --title-color: #000;
-  --amarelo: #FCE22A;
-  --text-color: #FFFFFF;
-  --border-color: #FFFFFF;
-  --link-color: #FFFFFF;
+:root {
+  --background: #d9d9d9;
+  --title-color: #fff;
+  --subtitle-color: #fff;
+  --amarelo: #ffde59;
+  --text-color: #000;
+  --second-text-color: #fff;
+  --text-color-card: #000;
+  --border-color: #ffffff;
+  --link-color: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
 
-.title a:visited {
-  color: #000000;
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #2146C7;
+  background-color: var(--background);
   font-family: 'Fredoka One', cursive;
+  color: var(--text-color);
 }
 
-.title {
-  font-family: 'Rampart One', cursive;
+.title a {
+  font-family: 'Fredoka One', cursive;
+  color: var(--title-color);
+  font-weight: 400;
+}
+
+.title a:visited {
   color: var(--title-color);
 }
 
@@ -35,7 +40,8 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: 'Fredoka One', cursive;
-  background-color: #FFFFFF;
+  background: url('../img/azul-escuro.png');
+  background-size: cover;
   padding: 0 2em;
 }
 
@@ -44,13 +50,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3em;
-  margin: 25px 0;
+  margin: 18px 0;
 }
 
 .menu__link {
   font-size: 24px;
-  color: #FFFFFF;
-  background-color: #2146C7;
+  color: #ffffff;
   border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -60,18 +65,19 @@ body {
 
 .menu__link:hover {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: 0.3s;
 }
 
 #btn-mobile {
   display: none;
+  color: var(--title-color);
 }
 
 .subtitle {
   margin: 1rem 3rem;
   padding: 10px 0;
-  color: #FFFFFF;
+  color: var(--subtitle-color);
 }
 /* Conteudo principal*/
 
@@ -80,7 +86,7 @@ body {
 }
 
 .main__text {
-  color: #FFFFFF;
+  color: var(--text-color);
   font-size: 18px;
   margin: 1rem 3rem;
 }
@@ -93,19 +99,35 @@ body {
   display: flex;
   gap: 1rem;
   font-size: 18px;
-  color: #FFFFFF;
+  color: var(--second-text-color);
+  background: url(../img/azul-escuro.png);
+  background-size: cover;
   margin: 1rem 3rem;
-  border-top: 3px solid #FFFFFF;
+  border-top: 3px solid #ffffff;
+}
+
+.last-game__title {
+  font-weight: 500;
+}
+
+.last-game__info {
+  padding: 0.5rem 1rem;
 }
 
 .last-game__info__link {
   text-decoration: none;
   font-size: 18px;
-  color: #F9F54B;
+  color: #f9f54b;
+}
+
+.last-game__info__link:hover {
+  color: var(--background);
 }
 
 .title__more-games {
-  border-top: 3px solid #FFFFFF;
+  border-top: 3px solid #ffffff;
+  color: var(--text-color);
+  font-weight: 500;
 }
 
 .more-games {
@@ -120,9 +142,9 @@ body {
 .game-card {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 454px;
-  border: 2px solid #FFFFFF;
+  width: 280px;
+  height: 400px;
+  border: 2px solid #ffffff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
@@ -140,7 +162,9 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 16px;
-  color: #FFFFFF;
+  color: #ffffff;
+  background-image: url(../img/azul-escuro.png);
+  background-size: cover;
 }
 
 .game-card__link {
@@ -154,27 +178,28 @@ body {
 
 .footer {
   font-family: 'Fredoka One', cursive;
-  color: #000000;
+  color: var(--title-color);
   text-align: center;
-  background-color: #FFFFFF;
+  background: url('../img/azul-escuro.png');
+  background-size: cover;
   padding: 2em;
 }
 
 .footer h2 {
   margin: 0;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
-
   .header {
     position: sticky;
     top: 0;
     z-index: 1;
   }
-  
+
   #btn-mobile {
     display: flex;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
     background: none;
@@ -186,20 +211,21 @@ body {
     width: 20px;
   }
 
-  #hamburguer::after, #hamburguer::before {
-    content: "";
+  #hamburguer::after,
+  #hamburguer::before {
+    content: '';
     display: block;
     width: 20px;
     height: 2px;
     margin-top: 5px;
     background: currentColor;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
   }
 
   #nav.active #hamburguer {
     border-top-color: transparent;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   #nav.active #hamburguer::before {
@@ -223,20 +249,20 @@ body {
     height: 0;
     top: 63px;
     right: 0;
-    background-color: #FFFFFF;
-    transition: .6s;
+    background-color: #ffffff;
+    transition: 0.6s;
 
     gap: 0;
   }
 
   #nav.active .menu {
     visibility: visible;
-    height: calc(100vh - 86px);
-    transition: .6s;
+    height: calc(100vh - 5rem);
+    transition: 0.6s;
   }
 
   .menu__link {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #000000;
     border-bottom: 1px solid;
     width: 90%;
@@ -252,7 +278,7 @@ body {
   .menu {
     top: 40px;
   }
-  
+
   .title {
     font-size: 1.5rem;
   }
@@ -270,13 +296,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2F4F4F;
+  background-color: #2f4f4f;
   border: 1px solid;
   border-radius: 15px;
   gap: 0.5em;
   width: 285px;
   padding: 2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .barra-busca__txt-busca {
@@ -291,8 +317,8 @@ body {
 .barra-busca__btn-busca {
   border-radius: 10px;
   height: 2rem;
-  background-color: #2146C7;
-  color: #FFFFFF;
+  background-color: #2146c7;
+  color: #ffffff;
   font-weight: 600;
 }
 
