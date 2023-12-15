@@ -182,12 +182,13 @@ body {
   text-align: center;
   background: url('../img/azul-escuro.png');
   background-size: cover;
-  padding: 2em;
+  padding: 1em;
 }
 
-.footer h2 {
-  margin: 0;
-  font-weight: 500;
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 768px) {
