@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
+
+:root {
+  --background: #d9d9d9;
+  --title-color: #fff;
+  --subtitle-color: #fff;
+  --amarelo: #ffde59;
+  --text-color: #000;
+  --second-text-color: #fff;
+  --text-color-card: #000;
+  --border-color: #ffffff;
+  --link-color: #ffffff;
+}
+
+.article {
+  margin: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*max-width: 928px*/
+}
+
+.game-banner {
+  background: url(../img/azul-escuro.png);
+  background-size: cover;
+}
+
+/*
+.game-banner__image {
+  height: 300px;
+  object-fit: none;
+  object-position: 10% 20%;
+}
+*/
+
+.game-banner__image {
+  height: 200px;
+  width: -webkit-fill-available;
+  object-fit: none;
+  object-position: 60% 17%;
+}
+
+.game-banner__description {
+  color: var(--second-text-color);
+  font-weight: 400;
+}
+
+.game-banner__footer {
+  display: flex;
+  justify-content: space-around;
+  color: var(--amarelo);
+}
