@@ -25,6 +25,10 @@ body {
   color: var(--text-color);
 }
 
+.container {
+  margin: 1rem 5rem;
+}
+
 .title a {
   font-family: 'Fredoka One', cursive;
   color: var(--title-color);
@@ -192,6 +196,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    margin: 1rem 3rem;
+  }
+
   .header {
     position: sticky;
     top: 0;
