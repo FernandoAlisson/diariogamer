@@ -36,12 +36,20 @@ h3 {
 .game-banner__image {
   height: 200px;
   width: -webkit-fill-available;
+}
+
+.banner__the-last-of-us-part-1 .game-banner__image {
   object-fit: none;
-  object-position: 60% 17%;
+  object-position: 56% 17%;
 }
 
 .banner__baldurs-gate-3 .game-banner__image {
+  object-fit: none;
   object-position: 40% 47%;
+}
+
+.banner__final-fantasy-7-remake .game-banner__image {
+  object-fit: cover;
 }
 
 .game-banner__description {
@@ -56,4 +64,5 @@ h3 {
   justify-content: space-around;
   color: var(--amarelo);
   padding-top: 1rem;
+  font-size: 14px;
 }
