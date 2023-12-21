@@ -52,6 +52,11 @@ h3 {
   object-fit: cover;
 }
 
+.banner__death-stranding .game-banner__image {
+  object-fit: cover;
+  object-position: 0% 32%;
+}
+
 .game-banner__description {
   color: var(--second-text-color);
   font-weight: 400;
