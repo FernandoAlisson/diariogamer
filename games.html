@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/card-colection.css">
 
   <title>Games</title>
 </head>
@@ -30,11 +32,20 @@
       <button id="btn-busca" class="barra-busca__btn-busca">Buscar</button> 
     -->
   </div>
-  
 
-  <h2 class="subtitle">Mais jogos</h2>
 
-  <section class="games more-games">
+  <h2 class="container mais-jogos">Mais jogos</h2>
+
+  <section class="games more-games container card-colection">
+    <div class="game-card">
+      <img class="game-card__img" src="./assets/img/the-last-of-us-part-1.png" alt="">
+      <div class="game-card__description">
+        <p class="game-card__description__title">The Last of Us Parte I</p>
+        <p class="game-card__description__year">2013</p>
+      </div>
+      <a class="game-card__link" href="./articles/the-last-of-us-part-1.html">Ver Mais</a>
+    </div>
+
     <div class="game-card">
       <img class="game-card__img" src="./assets/img/final-fantasy-7-remake.png" alt="">
       <div class="game-card__description">
@@ -70,13 +81,28 @@
       </div>
       <a class="game-card__link" href="#">Ver Mais</a>
     </div>
+
+    <div class="game-card">
+      <img class="game-card__img" src="./assets/img/baldurs-gate-3.png" alt="Imagem do game Baldurs Gate 3">
+      <div class="game-card__description">
+        <p class="game-card__description__title">Baldur's Gate 3</p>
+        <p class="game-card__description__year">2023</p>
+      </div>
+      <a class="game-card__link" href="./articles/baldurs-gate-3.html">Ver Mais</a>
+    </div>
   </section>
 
   <footer class="footer">
-    <h2>Desenvolvido por Fernando Alisson</h2>
+    <div class="footer__social">
+      <a href="#"><img src="./assets/instagram.png" alt="Logo do Instagram"></a>
+      <a href="#"><img src="./assets/twitch.png" alt="Logo do Instagram"></a>
+      <a href="#"><img src="./assets/youtube.png" alt="Logo do Instagram"></a>
+    </div>
+    <p>Diário Gamer &copy 2024 - Desenvolvido por Fernando Nascimento</p>
   </footer>
 
   <script src="./assets/js/menuHamburguer.js"></script>
   <script src="./assets/js/busca.js"></script>
 </body>
+
 </html>
