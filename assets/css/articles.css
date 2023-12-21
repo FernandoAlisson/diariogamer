@@ -40,6 +40,10 @@ h3 {
   object-position: 60% 17%;
 }
 
+.banner__baldurs-gate-3 .game-banner__image {
+  object-position: 40% 47%;
+}
+
 .game-banner__description {
   color: var(--second-text-color);
   font-weight: 400;
