@@ -57,6 +57,11 @@ h3 {
   object-position: 0% 32%;
 }
 
+.banner__demons-souls .game-banner__image {
+  object-fit: none;
+  object-position: 50% 64%;
+}
+
 .game-banner__description {
   color: var(--second-text-color);
   font-weight: 400;
