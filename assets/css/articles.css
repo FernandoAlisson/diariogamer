@@ -14,10 +14,12 @@
 
 h2 {
   margin: 0;
+  font-weight: 500;
 }
 
 h3 {
   margin: 0;
+  font-weight: 400;
 }
 
 .game-banner {
