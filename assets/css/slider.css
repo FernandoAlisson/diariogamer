@@ -107,21 +107,27 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   :root {
     --image-width: 720px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   :root {
     --image-width: 400px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   :root {
     --image-width: 350px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --image-width: 300px;
   }
 }
 
