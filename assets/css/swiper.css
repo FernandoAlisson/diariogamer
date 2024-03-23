@@ -1,0 +1,12 @@
+.swiper {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.swiper h3 {
+  padding: 1em 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
