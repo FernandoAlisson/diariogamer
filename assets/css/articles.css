@@ -42,6 +42,8 @@ h3 {
 .game-banner__image {
   height: 200px;
   width: -webkit-fill-available;
+  /* para o Firefox */
+  width: -moz-available;
 }
 
 .banner__the-last-of-us-part-1 .game-banner__image {
