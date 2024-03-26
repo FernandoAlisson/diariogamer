@@ -6,7 +6,8 @@
 }
 
 .swiper h3 {
-  padding: 1em 4em;
+  padding: 0.5em 0;
+  text-align: center;
 }
 
 .swiper-slide img {
