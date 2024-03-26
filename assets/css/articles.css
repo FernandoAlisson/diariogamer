@@ -70,6 +70,10 @@ h3 {
   object-position: 50% 64%;
 }
 
+.banner__fort-fifa .game-banner__image {
+  object-fit: cover;
+}
+
 .game-banner__description {
   color: var(--second-text-color);
   font-weight: 400;
