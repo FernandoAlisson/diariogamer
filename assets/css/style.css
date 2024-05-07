@@ -26,7 +26,9 @@ body {
 }
 
 .container {
-  margin: 1rem 5rem;
+  margin: 1rem 12rem;
+  color: var(--text-color);
+  font-size: 18px;
 }
 
 .title a {
@@ -84,11 +86,6 @@ body {
 }
 /* Conteudo principal*/
 
-.main__text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
 .main__image {
   width: 100%;
 }
@@ -96,7 +93,6 @@ body {
 .last-game {
   display: flex;
   gap: 1rem;
-  font-size: 18px;
   color: var(--second-text-color);
   background: url(../img/azul-escuro.png);
   background-size: cover;
@@ -139,6 +135,7 @@ body {
   flex-direction: column;
   width: 280px;
   height: 400px;
+  font-size: 16px;
   border: 2px solid #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -193,9 +190,20 @@ body {
   gap: 1rem;
 }
 
+@media screen and (max-width: 1220px) {
+  .container {
+    margin: 1rem 8rem;
+  }
+
+  .last-game {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     margin: 1rem 3rem;
+    font-size: 18px;
   }
 
   .header {
@@ -274,10 +282,6 @@ body {
     border-bottom: 1px solid;
     width: 90%;
     border-radius: 0;
-  }
-
-  .last-game {
-    flex-direction: column;
   }
 }
 
