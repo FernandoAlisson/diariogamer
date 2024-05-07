@@ -13,3 +13,9 @@
 .swiper-slide img {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    padding: 0 0 2rem 0;
+  }
+}
